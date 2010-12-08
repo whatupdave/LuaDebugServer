@@ -1,0 +1,6 @@
+.DS_Store
+build/
+*.pch
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspectivev3
