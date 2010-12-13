@@ -79,7 +79,7 @@ enum MessageTags
     
     NSString *bundleName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
     NSLog(@"%@ Debug Server started at %@:%hu", bundleName, [NetworkInfo localIpAddress], [debugServer localPort]);
-    NSLog(@"ssh %@ -p %hu", [NetworkInfo localIpAddress], [debugServer localPort]);
+    NSLog(@"telnet %@ %hu", [NetworkInfo localIpAddress], [debugServer localPort]);
     
     running = true;
 }
