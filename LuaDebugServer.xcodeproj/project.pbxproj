@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C3E328D11FB880A007B2E0E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3E328C11FB880A007B2E0E /* CFNetwork.framework */; };
-		5558367112AF1315008B4FF7 /* LuaServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5558366F12AF1315008B4FF7 /* LuaServer.h */; };
 		5558367212AF1315008B4FF7 /* LuaServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5558367012AF1315008B4FF7 /* LuaServer.m */; };
 		5558367712AF1324008B4FF7 /* AsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5558367312AF1324008B4FF7 /* AsyncSocket.h */; };
 		5558367812AF1324008B4FF7 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5558367412AF1324008B4FF7 /* AsyncSocket.m */; };
@@ -70,12 +69,13 @@
 		555836E612AF134D008B4FF7 /* lzio.h in Headers */ = {isa = PBXBuildFile; fileRef = 555836B212AF134D008B4FF7 /* lzio.h */; };
 		555836EB12AF1390008B4FF7 /* NetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 555836E912AF1390008B4FF7 /* NetworkInfo.h */; };
 		555836EC12AF1390008B4FF7 /* NetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 555836EA12AF1390008B4FF7 /* NetworkInfo.m */; };
+		557AAB1112B6169F0079B5A9 /* LuaServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 557AAB1012B6169F0079B5A9 /* LuaServer.h */; };
+		557AAB2612B618E10079B5A9 /* LuaDebugServer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 557AAB2512B618E10079B5A9 /* LuaDebugServer_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C3E328C11FB880A007B2E0E /* CFNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		5558366F12AF1315008B4FF7 /* LuaServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaServer.h; path = Classes/LuaServer.h; sourceTree = "<group>"; };
 		5558367012AF1315008B4FF7 /* LuaServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LuaServer.m; path = Classes/LuaServer.m; sourceTree = "<group>"; };
 		5558367312AF1324008B4FF7 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = libs/AsyncSocket/AsyncSocket.h; sourceTree = "<group>"; };
 		5558367412AF1324008B4FF7 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = libs/AsyncSocket/AsyncSocket.m; sourceTree = "<group>"; };
@@ -137,7 +137,8 @@
 		555836B212AF134D008B4FF7 /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzio.h; path = "libs/lua-5.1.4/lzio.h"; sourceTree = "<group>"; };
 		555836E912AF1390008B4FF7 /* NetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkInfo.h; path = Classes/NetworkInfo.h; sourceTree = "<group>"; };
 		555836EA12AF1390008B4FF7 /* NetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkInfo.m; path = Classes/NetworkInfo.m; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* LuaDebugServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaDebugServer_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		557AAB1012B6169F0079B5A9 /* LuaServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaServer.h; sourceTree = "<group>"; };
+		557AAB2512B618E10079B5A9 /* LuaDebugServer_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LuaDebugServer_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libLuaDebugServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLuaDebugServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -268,7 +269,7 @@
 		0C3E330A11FB89E3007B2E0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5558366F12AF1315008B4FF7 /* LuaServer.h */,
+				557AAB1012B6169F0079B5A9 /* LuaServer.h */,
 				5558367012AF1315008B4FF7 /* LuaServer.m */,
 				555836E912AF1390008B4FF7 /* NetworkInfo.h */,
 				555836EA12AF1390008B4FF7 /* NetworkInfo.m */,
@@ -279,7 +280,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				AA747D9E0F9514B9006C5449 /* LuaDebugServer_Prefix.pch */,
+				557AAB2512B618E10079B5A9 /* LuaDebugServer_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -291,7 +292,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5558367112AF1315008B4FF7 /* LuaServer.h in Headers */,
 				5558367712AF1324008B4FF7 /* AsyncSocket.h in Headers */,
 				5558367912AF1324008B4FF7 /* AsyncUdpSocket.h in Headers */,
 				5558367D12AF1334008B4FF7 /* LuaObjCBridge.h in Headers */,
@@ -319,6 +319,8 @@
 				555836E412AF134D008B4FF7 /* lvm.h in Headers */,
 				555836E612AF134D008B4FF7 /* lzio.h in Headers */,
 				555836EB12AF1390008B4FF7 /* NetworkInfo.h in Headers */,
+				557AAB1112B6169F0079B5A9 /* LuaServer.h in Headers */,
+				557AAB2612B618E10079B5A9 /* LuaDebugServer_Prefix.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
